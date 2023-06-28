@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 18vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(74, 4, 94);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+li{
+    list-style: none;
+    font-family: 'Finger Paint', cursive;
+    font-weight: bolder;
+    font-size: 10vh;
+    padding-top: 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+}
+.gamebox{
+    margin-top: 5vh;
+    margin-right: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 11vw);
+    grid-template-rows: repeat(3, 11vw);  
+} 
+.boxtext{
+    color: rgb(74, 4, 94);
+    font-size: 5rem;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Finger Paint', cursive;
+    border: 2px solid rgb(74, 4, 94);
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(242, 217, 239);
+    .boxtext{
+        background-color: rgb(242, 217, 239); 
+    }
+}
+
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Finger Paint', cursive;
+    font-weight: bolder;
+    width: 100%;
+}
+.turn {
+    font-size: 5vh;
+    color: rgb(74, 4, 94);
+    width: 210px;
+}
+.reset{
+    margin-top: 5vh;
+    font-size: 5vh;
+    color: rgb(74, 4, 94);
+}
+#btn{
+    font-family: 'Finger Paint', cursive;
+    color: rgb(74, 4, 94);
+    cursor: pointer;
+    font-size: 5vh;
+    position: relative;
+    left: 1vw;
+    margin-top: 8vh;
+    border-color: rgb(74, 4, 94);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+#btn:hover{
+    background-color: rgb(242, 217, 239);
+}
+
+@media screen and (max-width: 800px)
+{
+    .container{
+        flex-direction: column;
+    }
+    .boxtext{
+        font-size: 7vh;
+    }
+    .left{
+        justify-content: center;
+    }
+    .right{
+        justify-content: center;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #btn{
+        margin-top: 3vh;
+        position: relative;
+        left: -3vw;
+    }
+}
+
+  
+  
+  
