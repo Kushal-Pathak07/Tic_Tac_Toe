@@ -106,11 +106,14 @@ li{
 
 @media screen and (max-width: 800px)
 {
+    li{
+        font-size: 7vh;
+    }
     .container{
         flex-direction: column;
     }
     .boxtext{
-        font-size: 7vh;
+        font-size: 4vh;
     }
     .left{
         justify-content: center;
@@ -119,16 +122,23 @@ li{
         justify-content: center;
     }
     .info{
+        font-size: 5vh;
         display: flex;
         justify-content: center;
         margin-top: 50px;
     }
     #btn{
+        font-size: 3vh;
         margin-top: 3vh;
         position: relative;
         left: -3vw;
     }
+    .turn{
+        font-size: 4vh;
+        margin-left: 60px;
+    }
 }
+
 
   
   
