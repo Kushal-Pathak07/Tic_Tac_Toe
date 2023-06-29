@@ -109,6 +109,10 @@ li{
     li{
         font-size: 6vh;
     }
+    .gamebox{
+        grid-template-columns: repeat(3, 14vw);
+        grid-template-rows: repeat(3, 14vw);
+    }
     .container{
         flex-direction: column;
     }
