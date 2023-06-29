@@ -104,16 +104,16 @@ li{
     background-color: rgb(242, 217, 239);
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 600px)
 {
     li{
-        font-size: 7vh;
+        font-size: 6vh;
     }
     .container{
         flex-direction: column;
     }
     .boxtext{
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .left{
         justify-content: center;
