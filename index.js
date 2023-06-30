@@ -46,11 +46,8 @@ function checkWin()
 
             boxes[c].style.backgroundColor = "rgb(242, 217, 239)";
             boxes[c].getElementsByClassName('boxtext')[0].style.backgroundColor = "rgb(242, 217, 239)";
-
+            
             document.querySelector(".turn").innerText=boxText[a].innerText+" Won !!!";
-            setTimeout(function() {
-                location.reload();
-            }, 3000);
         }
     }
 }
@@ -73,10 +70,11 @@ document.querySelector("#btn").addEventListener('click' , reSetGame);
 
 //Logic of Game
 let boxes = document.getElementsByClassName("box");
-Array.from(boxes).forEach(element =>{
-    let boxtext = element.querySelector(".boxtext");
-    element.addEventListener('click',()=>{
-        if(boxtext.innerText === '')
+for(let i = 0; i < boxes.length; i++)
+{
+    let boxtext = boxes[i].querySelector(".boxtext");
+    boxes[i].addEventListener('click',()=>{
+        if(isgameover== false && boxtext.innerText === '')
         {
             count++;
             boxtext.innerText = turn;
@@ -91,4 +89,4 @@ Array.from(boxes).forEach(element =>{
             checkTie();
         }
     })
-})
+}
